@@ -31,7 +31,5 @@ function createTweet(input) {
     $('.tweet').attr('href', tweet);
 }
 
-$(document).ready(function() {
-    getQuote();
-    $('.trigger').click(getQuote);
-});
+$(document).ready(getQuote, $('.trigger').click(getQuote));
+
